@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Message from the Leadership - ASBM";
+}
+<h2 class="page-title">📜 Message from the Leadership</h2>
+<p class="sub-title">Words of Wisdom & Inspiration from Our Esteemed Leaders</p>
+
+<div class="message-container">
+    <div class="message-card">
+        <h3>🎓 Message from the Chancellor</h3>
+        <p>Welcome to Aditya School of Business Management! Our mission is to create a transformative educational experience that nurtures future leaders, innovators, and entrepreneurs. ASBM is committed to excellence in academics, research, and corporate partnerships.</p>
+        <p>- Prof. Rajesh Sharma, Chancellor</p>
+    </div>
+
+    <div class="message-card">
+        <h3>🏛️ Director's Vision</h3>
+        <p>At ASBM, we foster a culture of learning, leadership, and creativity. Our institution stands as a bridge between knowledge and real-world application, ensuring that our students emerge as global professionals.</p>
+        <p>- Dr. Neeta Verma, Director</p>
+    </div>
+
+    <div class="message-card">
+        <h3>📘 Principal’s Message</h3>
+        <p>Education is not just about acquiring knowledge; it is about developing skills, values, and vision. ASBM is dedicated to providing a world-class learning experience through innovation and industry-aligned programs.</p>
+        <p>- Dr. Vikram Patil, Principal</p>
+    </div>
+</div>
+
+<style>
+    /* Background Styling */
+    body {
+        background: linear-gradient(to right, #FFD700, #1E90FF);
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    /* Message Cards */
+    .message-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .message-card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 400px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+        .message-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+        }
+
+        .message-card h3 {
+            color: #1E90FF;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .message-card p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+            .message-card p:last-child {
+                font-weight: bold;
+                margin-top: 15px;
+                color: #0047AB;
+            }
+</style>

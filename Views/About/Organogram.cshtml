@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Organizational Structure - ASBM";
+}
+<h2 class="page-title">🏛️ Organizational Structure</h2>
+<p class="sub-title">The Hierarchy That Drives Excellence at ASBM</p>
+
+<div class="org-container">
+    <div class="org-box top-box">
+        <h3>🎓 Chancellor</h3>
+        <p>Prof. Rashmi Pathak</p>
+    </div>
+
+    <div class="org-line"></div>
+
+    <div class="org-row">
+        <div class="org-box">
+            <h3>🏛️ Director</h3>
+            <p>Dr. Neeta Verma</p>
+        </div>
+        <div class="org-box">
+            <h3>📘 Principal</h3>
+            <p>Dr. Vikram Patil</p>
+        </div>
+    </div>
+
+    <div class="org-line"></div>
+
+    <div class="org-row">
+        <div class="org-box">
+            <h3>📊 Academic Head</h3>
+            <p>Prof. Ramesh Tiwari</p>
+        </div>
+        <div class="org-box">
+            <h3>💼 Administration Head</h3>
+            <p>Mr. Sandeep Mehta</p>
+        </div>
+        <div class="org-box">
+            <h3>🎯 Training & Placement Head</h3>
+            <p>Ms. Kavita Sharma</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Background Styling */
+    body {
+        background: linear-gradient(to right, #FFD700, #1E90FF);
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .sub-title {
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    /* Organogram Styling */
+    .org-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .org-box {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        min-width: 250px;
+        width: 300px;
+        transition: transform 0.3s ease;
+    }
+
+    .top-box {
+        background: #1E90FF;
+        color: white;
+        font-weight: bold;
+    }
+
+    .org-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    .org-box h3 {
+        color: #0047AB;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .org-box p {
+        font-size: 16px;
+        color: #333;
+        margin: 0;
+    }
+
+    .org-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .org-line {
+        width: 3px;
+        height: 30px;
+        background-color: #333;
+        margin: 10px auto;
+    }
+</style>

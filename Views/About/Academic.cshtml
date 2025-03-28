@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Academic Advisory Committee - ASBM";
+}
+<h2 class="page-title">Academic Advisory Committee</h2>
+<p class="sub-title">Guiding Excellence in Education & Leadership</p>
+
+<div class="committee-container">
+    <div class="committee-box">
+        <h3>Prof. Rashmi Pathak</h3>
+        <p>Chairperson, Academic Advisory Committee</p>
+        <p>Expert in Business Strategy & Leadership</p>
+    </div>
+
+    <div class="committee-box">
+        <h3>Prof. Shweta Nigam</h3>
+        <p>Senior Member, Academic Advisory Committee</p>
+        <p>Renowned Economist & Policy Advisor</p>
+    </div>
+
+    <div class="committee-box">
+        <h3>Prof. Ramakrishnan Iyer</h3>
+        <p>Industry Expert, Corporate Relations</p>
+        <p>Specialist in Financial Analytics & Business Growth</p>
+    </div>
+
+    <div class="committee-box">
+        <h3>Prof. Neeta Bhat</h3>
+        <p>Head, Research & Development</p>
+        <p>Expert in Data Science & AI Innovation</p>
+    </div>
+
+    <div class="committee-box">
+        <h3>Prof. Mithila Chauhan</h3>
+        <p>Senior Professor, Business Analytics</p>
+        <p>Data-Driven Decision Making & Market Trends</p>
+    </div>
+
+    <div class="committee-box">
+        <h3>Dr. V. Patel</h3>
+        <p>Dean, Faculty of Management</p>
+        <p>Leadership & Organizational Behavior Specialist</p>
+    </div>
+</div>
+
+<style>
+    /* Background Styling */
+    body {
+        background: linear-gradient(to right, #FFD700, #1E90FF); /* Yellow to Blue Gradient */
+        font-family: 'Arial', sans-serif;
+        color: black; /* Text color changed to black */
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .committee-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .committee-box {
+        background: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 30%;
+        min-width: 280px;
+        margin: 15px;
+        backdrop-filter: blur(10px);
+        color: black; /* Ensuring text remains black */
+        transition: transform 0.3s ease;
+    }
+
+        .committee-box:hover {
+            transform: scale(1.05);
+        }
+</style>

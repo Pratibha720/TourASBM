@@ -1,0 +1,119 @@
+﻿@{
+    ViewBag.Title = "Admission Procedure";
+}
+
+<!-- Internal CSS: Only for this page -->
+<style>
+    body {
+        background: linear-gradient(to right, #ffcc00, #003366); /* Yellow to Blue Gradient */
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    .admission-container {
+        background-color: rgba(255, 255, 255, 0.9); /* White box with transparency */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+    }
+
+    .steps-list {
+        list-style: none;
+        padding: 0;
+    }
+
+        .steps-list li {
+            background: #003366;
+            color: #ffcc00;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .steps-list li:hover {
+                transform: scale(1.05);
+                background: #002244;
+            }
+
+    .step-number {
+        background-color: #ffcc00;
+        color: #003366;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 50%;
+        margin-right: 15px;
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #ffffff;
+        border-left: 5px solid #003366;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-admission {
+        background-color: #003366;
+        color: #ffcc00;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+</style>
+<div class="container">
+    <div class="admission-container">
+        <h1>Admission Procedure</h1>
+        <p>Follow the detailed steps below for admission:</p>
+
+        <ul class="steps-list">
+            <li><span class="step-number">1</span> Fill the online application form with accurate details.</li>
+            <li><span class="step-number">2</span> Upload scanned copies of required documents (ID proof, certificates, etc.).</li>
+            <li><span class="step-number">3</span> Pay the application fee online via net banking or UPI.</li>
+            <li><span class="step-number">4</span> Appear for the entrance exam (if applicable).</li>
+            <li><span class="step-number">5</span> Check your result on the official website.</li>
+            <li><span class="step-number">6</span> If selected, download your admission offer letter.</li>
+            <li><span class="step-number">7</span> Complete document verification at the college.</li>
+            <li><span class="step-number">8</span> Pay the first-semester fees to confirm your seat.</li>
+            <li><span class="step-number">9</span> Attend the orientation session and begin your journey!</li>
+        </ul>
+
+        <!-- Additional Information Sections -->
+        <div class="info-section">
+            <h3>Required Documents</h3>
+            <ul>
+                <li>10th & 12th Mark Sheets</li>
+                <li>Graduation Certificate (if applicable)</li>
+                <li>Government ID Proof (Aadhar Card, Passport, etc.)</li>
+                <li>Recent Passport Size Photographs</li>
+                <li>Caste Certificate (if applicable)</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h3>Important Dates</h3>
+            <p><b>Application Start Date:</b> 1st April 2025</p>
+            <p><b>Last Date to Apply:</b> 30th June 2025</p>
+            <p><b>Entrance Exam Date:</b> 15th July 2025</p>
+            <p><b>Result Announcement:</b> 25th July 2025</p>
+            <p><b>Document Verification:</b> 1st - 10th August 2025</p>
+            <p><b>Session Start:</b> 1st September 2025</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-admission">
+    <p>Aditya Business Management school</p>
+</footer>

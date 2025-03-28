@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Our Esteemed Faculty - ASBM";
+}
+<h2 class="page-title">Meet Our Esteemed Faculty</h2>
+<p class="sub-title">Experienced Professors & Industry Experts Guiding Your Future</p>
+
+<div class="faculty-container">
+    <div class="faculty-box">
+        <h3>Prof. Rashmi Patahk</h3>
+        <p>Professor - Business Strategy</p>
+        <p>PhD in Management | 15+ Years of Experience</p>
+    </div>
+
+    <div class="faculty-box">
+        <h3>Prof. Sweta Nigam</h3>
+        <p>HOD - Finance & Accounting</p>
+        <p>Ex-Banker | Specialist in Financial Markets</p>
+    </div>
+
+    <div class="faculty-box">
+        <h3>Prof. Ramakrishnan Iyer</h3>
+        <p>Professor - Marketing & Branding</p>
+        <p>Corporate Consultant | 10+ Years in Digital Marketing</p>
+    </div>
+
+    <div class="faculty-box">
+        <h3>Prof. Kavita Sharma</h3>
+        <p>Assistant Professor - Human Resource</p>
+        <p>Expert in Organizational Behavior & HRM</p>
+    </div>
+
+    <div class="faculty-box">
+        <h3>Dr.Neeta Bhat</h3>
+        <p>Professor - Business Analytics</p>
+        <p>Specialist in Data Science & AI</p>
+    </div>
+
+    <div class="faculty-box">
+        <h3>Prof. Poonam Nair</h3>
+        <p>Assistant Professor - Operations Management</p>
+        <p>Expert in Logistics & Supply Chain Strategies</p>
+    </div>
+</div>
+
+<style>
+    /* Background Styling */
+    body {
+        background: linear-gradient(to right, #FFD700, #1E90FF); /* Yellow to Blue Gradient */
+        font-family: 'Arial', sans-serif;
+        color: black; /* Text color black for better readability */
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .faculty-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .faculty-box {
+        background: rgba(255, 255, 255, 0.9); /* Light background for readability */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 30%;
+        min-width: 280px;
+        margin: 15px;
+        backdrop-filter: blur(10px);
+        color: black;
+        transition: transform 0.3s ease;
+    }
+
+        .faculty-box:hover {
+            transform: scale(1.05);
+        }
+</style>

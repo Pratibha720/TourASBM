@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Aditya School of Business Management. Offering world-class management education.">
+    <title>@ViewData["Title"] - ASBMCollegeWebsite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ASBMCollegeWebsite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <li><a asp-controller="ApplicationForm" asp-action="Create">Apply Now</a></li>
+
+
+    <!-- Bootstrap CDN (Latest Version) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-fY9zFJChOCmt9hGFFyJPtxlaWxQG9Ckv1yxRlfALPd30+Hxxk6iq8ojzAq45kC0M" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TourASBM.styles.css" asp-append-version="true" />
+</head>
+<body>
+    
+
+    <!-- Bootstrap JS (Latest Version) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xxz7YOI56YbGpHBfrKThRBjF0jQw4xBO+N9h5Xgg4UOM2w8z0N4xQ0WaNfu7mK99" crossorigin="anonymous"></script>
+    
+
+
+    <!-- Wrapper for Flexbox Layout -->
+    <div class="wrapper d-flex flex-column min-vh-100">
+
+        <!-- Top Social Media and ERP Links -->
+        <div class="bg-warning py-2">
+            <div class="container d-flex justify-content-between">
+                <!-- Social Media Links -->
+                <div class="d-flex align-items-center">
+                    <a href="https://www.facebook.com" target="_blank" class="me-3">
+                        <img src="~/images/icons/facebook.png" alt="Facebook" height="30">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="me-3">
+                        <img src="~/images/icons/twitter.png" alt="Twitter" height="30">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="me-3">
+                        <img src="~/images/icons/linkedin.png" alt="LinkedIn" height="30">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="me-3">
+                        <img src="~/images/icons/youtube.png" alt="Youtube" height="30">
+                    </a>
+                    <a href="https://www.instagram.com/aimsr.mumbai/" target="_blank">
+                        <img src="~/images/icons/instagram.png" alt="Instagram" height="30">
+                    </a>
+                </div>
+
+                <!-- ERP Links -->
+                <div>
+                    <a href="https://www.mha.gov.in/en/commoncontent/advisories-0" class="text-dark"><b>Advisory issued by MHA</b></a> |
+                    <a href="https://www.tcsion.com/dotcom/TCSSMB/Login/login.html" class="text-dark"><b>ERP - Employee Login</b></a> |
+                    <a href="https://www.tcsion.com/SelfServices/" class="text-dark"><b>ERP - Student Login</b></a> |
+                    <a href="https://alumni.aimsr.edu.in/user/login.dz" class="text-dark"><b>Alumni Portal Login</b></a> |
+                    <a href="https://www.asbm.edu.in/blogs/" class="text-dark"><b>Blogs</b></a>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            @Html.PartialAsync("Navbar")
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <!-- College Logo -->
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/aditya-logo.png" alt="Aditya College Logo" style="height: 80px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <!-- About Us Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="About" asp-action="Differentiators">Differentiators ASBM</a></li>
+                                    <li><a class="dropdown-item" asp-controller="About" asp-action="Message">Message</a></li>
+                                    <li><a class="dropdown-item" asp-controller="About" asp-action="Faculty">Faculty</a></li>
+                                    <li><a class="dropdown-item" asp-controller="About" asp-action="Academic">Academic Advisory Committee</a></li>
+                                    <li><a class="dropdown-item" asp-controller="About" asp-action="Organogram">Organogram</a></li>
+                                    <li><a class="dropdown-item" asp-controller="About" asp-action="MediaSpeaks">Media Speaks</a></li>
+                                </ul>
+                            </li>
+                            <!-- Campus Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="campusDropdown" role="button" data-bs-toggle="dropdown">Campus</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Campus" asp-action="Infrastructure">Infrastructure</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Campus" asp-action="Research">Research</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Campus" asp-action="LifeASBM">Life ASBM</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Campus" asp-action="FDP">FDP</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Campus" asp-action="MDP">MDP</a></li>
+                                </ul>
+                            </li>
+                            <!-- Courses Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown">Courses</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Courses" asp-action="PGDM">PGDM +</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Courses" asp-action="DataScience">PGDM AI & Data Science</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Courses" asp-action="BusinessAnalytics">Business Analytics</a></li>
+                                </ul>
+                            </li>
+                            <!-- Mandatory Disclosure -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="DisclosureDropdown" role="button" data-bs-toggle="dropdown">Mandatory Disclosure</a>
+                                <ul class="dropdown-menu">
+                                    <a class="nav-link text-dark" asp-controller="Disclosure" asp-action="MandatoryDisclosure">Mandatory Disclosure</a>
+                                    <a class="nav-link text-dark" asp-controller="Disclosure" asp-action="AICTE">AICTE</a>
+                                </ul>
+                            </li>
+                            <!-- Admission Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="admissionDropdown" role="button" data-bs-toggle="dropdown">Admission</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Admission" asp-action="Process">Admission Process</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admission" asp-action="Fee">Fee Structure</a></li>
+
+                                    <li><a class="dropdown-item" asp-controller="Admission" asp-action="ApplicationForm">Application Form</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admission" asp-action="OnlineFeePayment">Online Fee Payment</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Admission" asp-action="EducationLoanPortal">Education Loan Portal</a></li>
+                                </ul>
+                            </li>
+                            <!-- Placement Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="placementDropdown" role="button" data-bs-toggle="dropdown">Placement</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-controller="Placement" asp-action="Recruiters">Recruiters</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Placement" asp-action="StudentBatch2022_2024">Student Batch 2022_2024</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Body Section -->
+        <div class="container mt-4 flex-grow-1">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+
+
+    <!-- Add This Script Here -->
+    <script>
+        const texts = [
+            {
+                title: "Welcome to Aditya School of Business Management",
+                content: "At ASBM, we believe in fostering academic excellence and practical learning. Our mission is to provide students with the best opportunities in management education. Join us to experience holistic learning.",
+                effect: "bounceEffect"
+            },
+            {
+                title: "Explore Your Career Opportunities at ASBM",
+                content: "Our world-class faculty and state-of-the-art facilities ensure you receive the best management education. Start your career journey with us!",
+                effect: "fadeInOut"
+            },
+            {
+                title: "Holistic Learning Experience",
+                content: "We provide hands-on learning experiences through workshops, case studies, and interactive sessions. Become industry-ready with ASBM.",
+                effect: "slideFromLeft"
+            },
+            {
+                title: "Join a Thriving Alumni Network",
+                content: "With thousands of successful alumni worldwide, ASBM opens doors to a global network of opportunities and lifelong connections.",
+                effect: "zoomIn"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function changeText() {
+            const textContainer = document.getElementById('changingText');
+
+            // Remove Previous Classes
+            textContainer.classList.remove('animated-text', texts[currentIndex].effect);
+
+            // Update Text
+            textContainer.innerHTML = `<h2>${texts[currentIndex].title}</h2>
+                                        <p>${texts[currentIndex].content}</p>
+                                        <a href="/about" class="btn btn-primary">Learn More</a>`;
+
+            // Apply Animation
+            setTimeout(() => {
+                textContainer.classList.add('animated-text', texts[currentIndex].effect);
+            }, 50);
+
+            currentIndex = (currentIndex + 1) % texts.length;
+        }
+
+        // Initial Load
+        changeText();
+
+        // Change Text Every 3 Seconds
+        setInterval(changeText, 3000);
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true // Whether animation should happen only once
+        });
+    </script>
+
+    <div class="floating-contact-buttons">
+        <a href="https://www.asbm.edu.in/pgdm-mba/" class="floating-btn enquire" title="Enquire Now">
+            <img src="~/images/floating-btn enquire.png" alt="Enquire" />
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B918080112200&text&type=phone_number&app_absent=0" target="_blank" class="floating-btn whatsapp" title="Chat on WhatsApp">
+            <img src="~/images/whatsapp-icon.png" alt="WhatsApp" />
+        </a>
+        <a href="javascript:void(0);" class="floating-btn agi-buddy" title="AGI Buddy Chatbot" onclick="toggleChatbot()">
+            <img src="~/images/chatbot-icon.png" alt="AGI Buddy" />
+        </a>
+    </div>
+
+    <!-- Chatbot Popup -->
+    <div id="chatbot-popup">
+        <iframe src="https://your-chatbot-url.com" title="AGI Buddy"></iframe>
+    </div>
+
+    <script>
+        function toggleChatbot() {
+            const popup = document.getElementById("chatbot-popup");
+            popup.style.display = popup.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+
+
+    <partial name="~/Views/Shared/_Footer.cshtml" />
+
+
+
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    
+</body>
+</html>

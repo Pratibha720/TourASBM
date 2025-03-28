@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Fee Structure - Aditya School of Business Management";
+}
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ffcc00, #002147); /* Yellow to Blue Gradient */
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fee-container {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .fee-header {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .fee-content {
+        font-size: 18px;
+        max-width: 900px;
+        margin: auto;
+        line-height: 1.6;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+    }
+
+    .fee-table {
+        width: 90%;
+        max-width: 900px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .fee-table th, .fee-table td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+        color: #002147;
+    }
+
+    .fee-table th {
+        background-color: #002147;
+        color: white;
+        font-size: 20px;
+    }
+
+    .fee-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #d60000; /* Red for Highlight */
+    }
+
+    .note {
+        font-size: 16px;
+        margin-top: 20px;
+        color: white;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background-color: #fff;
+        color: #002147;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .back-btn:hover {
+        background-color: #ffcc00;
+        color: #002147;
+        border: 2px solid #002147;
+    }
+</style>
+
+<div class="fee-container">
+    <h1 class="fee-header">Fee Structure - ASBM</h1>
+
+    <p class="fee-content">
+        Aditya School of Business Management offers an <span class="highlight">affordable yet world-class education</span>. Below is the detailed fee structure for various programs:
+    </p>
+
+    <table class="fee-table">
+        <tr>
+            <th>Program</th>
+            <th>Duration</th>
+            <th>Total Fee (INR)</th>
+        </tr>
+        <tr>
+            <td>PGDM +</td>
+            <td>2 Years</td>
+            <td><span class="highlight">₹7,50,000</span></td>
+        </tr>
+        <tr>
+            <td>PGDM (AI & Data Science)</td>
+            <td>2 Years</td>
+            <td><span class="highlight">₹8,00,000</span></td>
+        </tr>
+        <tr>
+            <td>Business Analytics</td>
+            <td>2 Years</td>
+            <td><span class="highlight">₹7,00,000</span></td>
+        </tr>
+    </table>
+
+    <p class="note">
+        📌 <span class="highlight">Scholarships & Installment Options Available</span> – Contact the admission office for details.  
+        📌 **Additional Costs:** Hostel, study material, and exam fees may be separate.
+    </p>
+
+    <a href="@Url.Action("Index", "Admission")" class="back-btn">Back to Admission</a>
+</div>

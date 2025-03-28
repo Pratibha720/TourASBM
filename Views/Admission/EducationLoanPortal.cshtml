@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Educational Loan Portal";
+}
+<h2>Educational Loan Portal</h2>
+<p>Find the best education loan options available.</p>
+
+<div class="loan-container">
+    <div class="loan-box">
+        <h3>Government Loan Schemes</h3>
+        <p>Explore education loan schemes provided by the government.</p>
+        <a href="https://www.education.gov.in/scholarships-education-loan-4" class="btn btn-primary">View Details</a>
+    </div>
+
+    <div class="loan-box">
+        <h3>Private Bank Loans</h3>
+        <p>Check out competitive loan offers from private banks.</p>
+        <a href="https://www.icicibank.com/personal-banking/loans/education-loan" class="btn btn-primary">Apply Now</a>
+    </div>
+
+    <div class="loan-box">
+        <h3>Scholarships & Grants</h3>
+        <p>Find scholarships and grants to support your education.</p>
+        <a href="https://scholarships.gov.in/" class="btn btn-primary">Check Eligibility</a>
+    </div>
+</div>
+
+<style>
+    /* Educational Loan Portal Page Styling */
+    body {
+        background: linear-gradient(to right, #FFD700, #1E90FF); /* Yellow to Blue Gradient */
+    }
+
+    .loan-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .loan-box {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 30%;
+        min-width: 250px;
+        margin: 10px;
+    }
+
+    .btn-primary {
+        background-color: #1E90FF;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .btn-primary:hover {
+            background-color: #0047AB;
+        }
+</style>

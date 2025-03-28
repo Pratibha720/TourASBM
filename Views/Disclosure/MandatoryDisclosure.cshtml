@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Mandatory Disclosure";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffcc00, #0056b3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Mandatory Disclosure</h2>
+        <p>Welcome to the Mandatory Disclosure page.</p>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="@Url.Content("~/Documents/MandatoryDisclosure.pdf")" target="_blank">Download PDF</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
